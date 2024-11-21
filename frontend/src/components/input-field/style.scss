@@ -1,0 +1,62 @@
+@import '../../common/themeColor.scss';
+
+.input-field-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-right: 10px;
+}
+.full-width-input-generic {
+  width: 100%;
+  margin-right: unset;
+  margin-bottom: -3px;
+}
+.additonal-one {
+  border: 0.2px solid $gray-3;
+  border-width: 2px;
+  padding: 0px 6px;
+  border-radius: 4px;
+  margin: 0px 5px;
+  background-color: #dedcdc;
+  span {
+    color: $gray-2;
+    font-size: 12px;
+  }
+}
+.input-field-generic,
+.css-yk16xz-control {
+  padding: 12px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: $gray-2;
+
+}
+.css-yk16xz-control {
+  padding: 1px 7px !important;
+  border-width: 0px !important;
+  height: 3rem !important;
+}
+.css-yk16xz-control:hover {
+  border-color: $white !important;
+}
+.error-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.form-error {
+  font-size: small;
+  color: $primaryColor;
+  margin: 3px 5px;
+}
+.eye-open {
+  cursor: pointer;
+}
+.css-a5rdam-MuiGrid-root > .MuiGrid-item {
+  padding-top: 0px !important;
+}

@@ -1,0 +1,54 @@
+@import '../../common/themeColor.scss';
+
+.dashboard-main-container {
+  display: flex;
+  flex-direction: column;
+}
+.title-container-dashboard {
+  padding: 8px 5px;
+  border-radius: 7px;
+  background-color: white;
+  span {
+    font-weight: bolder;
+    font-size: 20px;
+    color: $primaryColor;
+  }
+}
+.dashboard-card-container {
+  margin: 10px 0px;
+}
+.dashboard-card {
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-icon-container {
+  background-color: $red-6;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-agents:before {
+  font-size: 20px;
+  color: $primaryColor;
+}
+.title-card-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  span:first-child {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  span:last-child {
+    font-size: 14px;
+    color: $primaryColor;
+  }
+}

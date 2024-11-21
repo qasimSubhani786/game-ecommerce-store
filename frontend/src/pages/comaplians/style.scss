@@ -1,0 +1,30 @@
+.horizontal-card-conatiner {
+  display: flex;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.image-container-horizontal {
+  display: flex;
+  img {
+    height: 200px;
+  }
+}
+.card-detail-horizontal {
+  display: flex;
+  width: 100%;
+  padding: 6px;
+  flex-direction: column;
+  h4 {
+    font-weight: bold;
+  }
+}
+.description-complain {
+  span:first-child {
+    font-weight: bold;
+  }
+}
+.horizontal-item-badge {
+  display: flex;
+}

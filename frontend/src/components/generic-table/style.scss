@@ -1,0 +1,30 @@
+@import '../../common/themeColor.scss';
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table-row {
+  background-color: white;
+  vertical-align: middle;
+  td {
+    border: none;
+    margin: 10px 0px;
+  }
+  td:first-child {
+    border-radius: 15px 0 0 15px;
+  }
+  td:last-child {
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  text-align: center !important;
+}

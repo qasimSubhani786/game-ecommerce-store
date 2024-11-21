@@ -1,0 +1,336 @@
+@import '../../common/themeColor.scss';
+
+.main-container {
+  width: 100%;
+  padding: 0px 4%;
+}
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.caption-title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $tommy-font;
+  color: $black2;
+  display: flex;
+  align-self: center;
+  width: 100%;
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 390px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 0.8rem;
+  }
+  span {
+    color: $primaryColor;
+    font-weight: bolder;
+    margin-right: 5px;
+  }
+}
+.cards-container {
+  align-self: center;
+  width: 100%;
+}
+.card-container {
+  .plan-card {
+    border: 1px solid $gray-7;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .selected-card-border {
+    border: 1px solid;
+    box-shadow: 0px 8px 16px 0px $grayBox-shadow;
+  }
+  .plan-title {
+    border-bottom: 1px solid $gray-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    span {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: $tommy-font;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  .card-info {
+    border-radius: 8px;
+    background-color: $gray-4;
+    margin: 7px 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      text-align: center;
+      font-size: 14px;
+      color: $black2;
+      font-family: $tommy-font;
+      margin-left: 5px;
+    }
+  }
+  .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    .price-plan {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: $tommy-font;
+      color: $primaryColor;
+    }
+  }
+  .radio-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+.form-check-input:checked {
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.invoice-container {
+  border: 1px solid $gray-7;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 70%; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  
+.invoice-top-wrapper {
+    border-bottom: 1px solid $gray-7;
+    .invoice-title {
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      @media screen and (max-width: 512px) {
+        width: 100%;
+      }
+    }
+    span {
+      font-size: 16px;
+      font-weight: bolder;
+      font-family: $tommy-font;
+      color: $black2;
+      @media screen and (max-width: 512px) {
+        font-size: 12px;
+      }
+    }
+    .invoice-type {
+      background-color: #2d2d2d;
+      padding: 0px 25px;
+      border-radius: 15px;
+      @media screen and (max-width: 512px) {
+        padding: 2px 12px;
+      }
+      span {
+        color: $white !important;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .invoice-table-heading {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: $tommy-font;
+      color: $black2;
+      width: 33% !important;
+      display: inline-block;
+      @media screen and (max-width: 512px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .invoice-table-heading span:nth-child(1) {
+    padding-left: 1rem;
+  }
+  .invoice-table-heading span:nth-child(2) {
+    text-align: center !important;
+    @media screen and (max-width: 512px) {
+      padding-left: 1rem;
+    }
+  }
+  .invoice-table-heading span:nth-child(3) {
+    text-align: right !important;
+    padding-left: 3rem;
+  }
+  .invoice-table-item {
+    margin: 15px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light-red2;
+    border-radius: 8px;
+  }
+  .invoice-table-item span:nth-child(3) {
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $tommy-font;
+    color: $black2;
+  }
+  .invoice-table-item span:nth-child(2) {
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $tommy-font;
+    color: $black2;
+  }
+  .invoice-icon-container {
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    img {
+      width: 34px;
+    }
+  }
+  .total-amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 8px;
+    background-color: $gray-4;
+    border-radius: 5px;
+    margin: 15px;
+    span {
+      font-size: 18px;
+      font-weight: bolder;
+      font-family: $tommy-font;
+      color: $red-3;
+    }
+  }
+  .total-amount-container span:nth-child(2) {
+    color: $black2;
+  }
+  .bottom-note {
+    padding: 13px 8px;
+    margin: 15px;
+    span {
+      font-size: 16px;
+      font-family: $tommy-font;
+      color: $gray-5;
+    }
+  }
+  .bottom-note span span:first-child {
+    color: $black2;
+    font-weight: bolder;
+    padding-right: 2px;
+    font-size: 18px;
+  }
+  .bottom-note span span:nth-child(2) {
+    color: $primaryColor;
+    font-weight: lighter;
+    padding-right: 2px;
+    font-size: 18px;
+    margin-left: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.add-payment-method {
+  border: 1px solid $gray-7;
+  padding: 21px 20px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .card-payment-info {
+    display: flex;
+    margin-left: 10px;
+  }
+  span {
+    margin-top: -3px;
+    font-size: 18px;
+    font-family: $tommy-font;
+    color: $black2;
+    font-weight: bolder;
+    @media screen and (max-width: 512px) {
+      font-size: 16px;
+    }
+  }
+  div {
+    padding: 8px 5rem;
+    background-color: #dd3333;
+    border-radius: 11px;
+    cursor: pointer;
+    @media screen and (max-width: 512px) {
+      padding: 7px 3rem;
+    }
+    span {
+      font-size: 18px;
+      font-family: $tommy-font;
+      color: $white;
+      font-weight: bolder;
+    }
+  }
+}
+.card-type-info {
+  height: 34px;
+  width: 40px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+.pay-now-container {
+  margin: 20px 10px;
+  margin-left: -10px;
+}
+.payment-card-type {
+  display: flex;
+  align-items: center;
+}
+.default-card-check {
+  padding: 6px !important;
+  background-color: $gray-17 !important;
+  cursor: pointer;
+  border-radius: 7px !important;
+  span {
+    color: $black2 !important;
+    font-size: 14px !important;
+    font-family: $tommy-font;
+    font-weight: unset !important;
+    margin-left: 4px;
+  }
+}
+
+.monthly-border {
+  border-color: $black !important;
+}
+.biAnnual-border {
+  border-color: $gray-15 !important;
+}
+.annual-border {
+  border-color: $primaryColor !important;
+}
+.payment-success-popup {
+  a {
+    color: $primaryColor;
+  }
+}

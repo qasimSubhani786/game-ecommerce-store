@@ -1,0 +1,94 @@
+@import "../../common/themeColor.scss";
+
+.background-dashboard {
+  background-color: $gray-20;
+  margin: 10px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 59px;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.noti-icon-header {
+  margin: 0 10px;
+  height: 22px;
+  width: 22px;
+}
+.header-secondary-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  // border: 1px solid;
+  padding: 0 5px;
+}
+.noduk-icon-header {
+  height: 50px;
+  width: 50px;
+}
+.header-dp-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  // border: 1px solid red;
+}
+
+.side-bar-container {
+  height: 100vh;
+  width: 100%;
+  margin: 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.user-section-item {
+  // background-color: $red-6;
+  background-color: $gray-12;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 8px 0px;
+  cursor: pointer;
+  span {
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 500;
+    // color: $primaryColor;
+    color: $gray-21;
+  }
+}
+.selected-tab-sidebar {
+  background-color: $red-6 !important;
+  span {
+    color: $primaryColor !important;
+  }
+}
+
+.main-layout-handler {
+  display: flex;
+}
+.sub-page-container {
+  // border: 2px solid red;
+  margin: 10px 0px 0px 0px;
+  height: 100vh;
+}
+.icon-dashboard:before,
+.icon-claims:before,
+.icon-invoices:before,
+.icon-users:before {
+  font-size: 20px;
+}
+.log-out-popUp {
+  .action-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.log-out-popUp .action-popup.dropdown-menu.show {
+  height: 17vh;
+}

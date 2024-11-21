@@ -1,0 +1,130 @@
+@import '../../common/themeColor.scss';
+
+.accordion-button:not(.collapsed) {
+  color: $primaryColor;
+  background-color: white !important;
+}
+.accordion-button {
+  outline: none;
+}
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+.accordion-button::after {
+  display: none;
+}
+.top-search-hearder {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    color: $primaryColor;
+    font-size: 20px;
+    font-weight: bold;
+    @media only screen and (max-width: 415px) and (min-width: 359px) {
+      font-size: 1rem !important;
+    }
+  }
+}
+.accordion-item {
+  border: 1px solid $gray-9;
+  border-left: 5px solid $primaryColor !important;
+  position: relative;
+}
+.accordion-item {
+  --bs-accordion-border-width: 0px !important;
+}
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+.accordion-button {
+  padding: 13px;
+}
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-body label {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.accordion-body .input-field-generic {
+  background-color: white !important;
+}
+.accordion-body .input-field-container {
+  background-color: white;
+  border: 1px solid $gray-9;
+}
+.accordion-body .yearContainer {
+  background-color: white;
+  height: unset !important;
+}
+.accordion-body .Dropdown-root {
+  border: 1px solid $gray-9;
+  padding: 12px;
+  border-radius: 3px;
+  position: absolute;
+  width: 47.2%;
+  background-color: $white;
+  z-index: 1;
+  @media only screen and (max-width: 400px) {
+    position: unset !important;
+    width: 100%;
+  }
+}
+.collapsing .dropdown-style-by-status {
+  z-index: 0;
+  position: relative !important;
+  width: 100%;
+}
+.collapsing .accordion-body .generic-btn-container {
+  margin-top: 20px !important;
+}
+.accordion-body .Dropdown-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-body .Dropdown-option {
+  padding: 5px 0px;
+  border-bottom: 1px solid $gray-9;
+  font-size: 16px;
+  cursor: pointer;
+}
+.accordion-body .Dropdown-option:hover {
+  background-color: $primaryColor;
+  color: white;
+  padding: 5px 5px;
+}
+.accordion-body .generic-btn-container {
+  margin: unset !important;
+  margin-top: 70px !important;
+}
+.accordion-body .yearContainer:focus {
+  border: none;
+  outline: none;
+}
+.Dropdown-placeholder {
+  color: $gray-22;
+}
+.accordion-item {
+  position: relative;
+}
+.clear-filter {
+  position: absolute;
+  right: 20px;
+  font-weight: unset !important;
+  font-size: 15px !important;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: $red-7;
+  cursor: pointer;
+  color: $primaryColor;
+}
+.custom-search-btn-container {
+  /* border: 2px solid green; */
+  align-self: center;
+  width: 25%;
+}
