@@ -1,0 +1,49 @@
+@import"../../common/themeColor.scss";
+
+.forgot-password-box {
+    height: 50vh;
+    transform: translate(50%,15%);
+    width: 50%;
+    background-color: white ;
+    border: 1px solid $gray-9;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    .login-logo{
+        position: absolute;
+        top: -8%;
+        text-align: center;
+        img{
+            height: 60px;           
+        }
+    }
+    .login-input-field{
+        width: 80%;
+        margin-top: 2rem;
+        input:-webkit-autofill,
+        input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s; // These classes are to avoid get auto complete color behaviour.
+  }
+        .input-field-container{
+            border: 3px solid $gray-9;
+            margin: 0 0 8px 0;
+            border-radius: 35px;
+            padding: 0 10px;
+            .eye-open {
+                cursor: pointer;
+            }
+        }
+    }
+    .input-field-generic{
+        font-size: 12px;
+        border-radius: 35px;
+        padding: 12px;
+     
+    }
+    .input-field-container{
+            border: 1px solid $gray-9!important;
+            border-radius: 35px;
+    } 
+    }

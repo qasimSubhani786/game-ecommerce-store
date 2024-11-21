@@ -1,0 +1,18 @@
+@import '../../common/themeColor.scss';
+
+.gray-badge {
+  background-color: $gray-23;
+  color: $black2;
+}
+.yellow-badge {
+  background-color: $yellow-1;
+  color: $yellow-2;
+}
+.green-badge {
+  background-color: $green-1;
+  color: $green-2;
+}
+.red-badge {
+  background-color: $red-7;
+  color: $primaryColor;
+}

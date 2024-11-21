@@ -1,0 +1,37 @@
+@import '../../common/themeColor.scss';
+
+.error-page-500 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  span {
+    font-size: 22px;
+    color: $black2;
+    font-family: $tommy-font;
+  }
+  img {
+    height: 105px;
+    margin-bottom: 20px;
+  }
+}
+.error-page-500 span:nth-child(2) {
+  font-size: 22px;
+  color: $primaryColor;
+  font-family: $tommy-font;
+  font-weight: bold;
+}
+
+.error-btn-container {
+  width: 20%;
+}
+// .error-page-500 span:last-child,
+// .noduk-email-confirmation {
+//   font-size: 22px;
+//   color: $primaryColor;
+//   font-family: $tommy-font;
+//   font-weight: bold;
+//   margin-left: 5px;
+//   cursor: pointer;
+// }

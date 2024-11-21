@@ -1,0 +1,100 @@
+@import "../../common/themeColor.scss";
+
+.action-popup {
+  background-color: $white;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 9999;
+  border: none;
+}
+.action-options {
+  display: flex;
+  align-items: center;
+  span:last-child {
+    font-size: 14px;
+  }
+}
+.green-popup-icon {
+  color: $green-2;
+  background-color: $green-1;
+}
+.gray-popup-icon {
+  color: $black2;
+  background-color: $gray-23;
+}
+.red-popup-icon {
+  color: $primaryColor;
+  background-color: $red-7;
+}
+.popup-menu-icon {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 50%;
+}
+.action-popup-style {
+  color: $primaryColor;
+
+  @media only screen and (max-width: 415px) and (min-width: 360px) {
+    padding: 5px;
+    margin: 0 -18 px 0 5px;
+  }
+}
+.close-cancel-policy {
+  padding: 1.5px;
+  border-radius: 50%;
+  color: $primaryColor;
+  background-color: $red-4;
+}
+.text-cancel-policy {
+  color: $black2;
+}
+.text-option-claim {
+  color: $green-2;
+}
+.icon-add-claim {
+  background-color: $green-1;
+  color: $green-2;
+  border-radius: 50%;
+}
+.action-menu button#dropdown-basic {
+  background-color: white;
+  padding: 0;
+  border: none;
+}
+.action-menu .dropdown-toggle::after {
+  content: "" !important;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: unset !important;
+}
+.dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center {
+  position: unset !important;
+}
+.logout-user-info {
+  border-bottom: 1px solid $gray-9;
+  margin-bottom: 2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .user-primary,
+  .user-secondry {
+  }
+  .user-secondry {
+    h5,
+    p {
+      margin-bottom: 0px;
+      margin-left: 15px;
+    }
+    p {
+      color: $gray-21 !important;
+    }
+  }
+}

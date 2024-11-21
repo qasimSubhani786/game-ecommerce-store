@@ -1,0 +1,37 @@
+@import "../../common/themeColor.scss";
+
+.modal-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.modal-body-generic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-title {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.success-title-color-modal {
+  color: $green !important;
+}
+.error-title-color-modal {
+  color: $primaryColor !important;
+}
+.alert-title-color-modal {
+  color: $mustard !important ;
+}
+.modal-description {
+  font-size: 16px !important;
+  color: $inputText !important;
+  text-align: center;
+}
+.footerContainer{
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+}

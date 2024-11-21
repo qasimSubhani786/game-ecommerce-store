@@ -1,0 +1,38 @@
+@import '../../common/themeColor.scss';
+button.btn-close {
+  opacity: initial;
+  color: black;
+}
+.user-detail {
+  label {
+    color: $gray-21;
+    font-size: 12px;
+  }
+  .input-field-container {
+    border: 1px solid $gray-9 !important;
+    outline: none;
+  }
+  .input-field-generic,
+  .css-yk16xz-control {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+.drop-down-height {
+  padding: 11px 12px !important;
+}
+.error-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.form-error {
+  font-size: small;
+  color: $primaryColor;
+  margin: 3px 5px;
+}
+.pac-container {
+  z-index: 10000 !important;
+}
